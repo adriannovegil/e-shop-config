@@ -1,20 +1,16 @@
+server:
+  port: 8761
 
-# Eureka server
-eureka:
-  datacenter: Test Data Center
-  environment: development
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-
----
 spring:
-  config:
-    activate:
-      on-profile: docker
+  application:
+    name: discovery
 
 eureka:
-  datacenter: Docker Data Center
-  environment: docker
   instance:
-    preferIpAddress: true
+    hostname: localhost
+  # standalone mode
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
