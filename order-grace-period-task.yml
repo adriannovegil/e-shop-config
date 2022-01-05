@@ -16,7 +16,7 @@ spring:
   # Postgres
   datasource:
     url: jdbc:postgresql://${app.postgres.host}:${app.postgres.port}/${app.postgres.database}
-    username: ${app.postgres.username}
+    username: ${app.postgres.user}
     password: ${app.postgres.password}
     driver-class-name: org.postgresql.Driver
 
