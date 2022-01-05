@@ -107,12 +107,10 @@ spring:
   config:
     activate:
       on-profile: distributed-tracing
-
   sleuth:
     enabled: true
     traceId128: true
     sampler.probability: 1.0
-
   zipkin:
     enabled: true
     sender.type: kafka
