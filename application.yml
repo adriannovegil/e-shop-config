@@ -137,7 +137,7 @@ app:
       port: 29092
   auth-server:
     host: authorization-service
-    port: 8080
+    port: 8443
   logstash:
     host: logstash
 
