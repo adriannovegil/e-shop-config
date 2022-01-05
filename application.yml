@@ -135,9 +135,9 @@ app:
     broker:
       host: kafka
       port: 29092
-  auth-server:
-    host: authorization-service
-    port: 8443
+  auth-server: https://authorization-service:8443
+    #host:
+    #port: 8443
   logstash:
     host: logstash
 
