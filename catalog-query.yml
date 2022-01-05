@@ -30,6 +30,7 @@ spring:
       username: ${app.mongodb.user}
       password: ${app.mongodb.password}
       database: ${app.mongodb.database}
+      authentication-database: admin
 
   # JPA
   jpa:
