@@ -63,12 +63,10 @@ spring:
         gracePeriodConfirmed: grace-period-confirmed
         paymentStatus: payment-status
         stockConfirmed: stock-confirmed
-
   cloud:
     # As Spring Cloud Ribbon is in maintenance mode.
     # It is recommended switching to BlockingLoadBalancerClient instead.
     loadbalancer.ribbon.enabled: false
-
     # Disable distributed tracing by default
   zipkin:
     enabled: false
