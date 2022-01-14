@@ -28,7 +28,7 @@ app:
       host: localhost
       port: 9092
   auth-server:
-    host: localhost
+    host: authorization-service
     port: 8090
     realm: e-shop
     jwk-set-uri: http://${app.auth-server.host}:${app.auth-server.port}/auth/realms/${app.auth-server.realm}/protocol/openid-connect/certs
