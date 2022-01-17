@@ -21,3 +21,7 @@ spring:
   config:
     activate:
       on-profile: docker
+
+app:
+  minio:
+    url: http://minio:9000
